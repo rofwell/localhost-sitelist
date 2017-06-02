@@ -1,0 +1,72 @@
+@font-family {
+    font-family: Monaco;
+    src: url(monaco.ttf);
+}
+
+* {
+    margin: 0; 
+    padding: 0;
+    background-color: #161D29;
+    font-family: Monaco, monospace;
+    color: white;
+}
+
+body {
+    padding: 10px;
+}
+
+h1, h2, h3, h4, h5, h6, h7, p {
+    font-size: 18px;
+    display: inline-block;
+}
+
+h2 {
+    background-color: green;
+}
+
+h3 {
+    position: fixed;
+    bottom: 20px;
+}
+
+.cardholder {
+    position: fixed;
+    top: 40px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    padding: 10px;
+    border: 2px solid white;
+    overflow-y: auto;
+}
+
+.card {
+    cursor: pointer;
+    
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    &.dev {
+        h2 {
+            background-color: goldenrod;
+        }
+    }
+    
+    &.unknown {
+        h2 {
+            background-color: #696969;
+        }
+    }
+    
+    &.hidden {
+        h2 {
+            background-color: darkred;
+        }
+    }
+    
+    &:hover {
+        margin-left: 10px;
+    }
+}
